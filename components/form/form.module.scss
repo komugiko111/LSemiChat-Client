@@ -1,4 +1,4 @@
-@import "../styles/variables.scss";
+@import "./styles/variables.scss";
 
 .form {
   width: 40%;
@@ -42,4 +42,72 @@
 .errorList {
   margin: 0;
   padding-inline-start: 30px;
+}
+
+.header {
+	background-color: aqua;
+	line-height: 3.5em;
+}
+
+.blog {
+	text-align: left;
+	border: solid 3px;
+	width: 100%	;
+}
+
+.content{
+	line-height: 7.0em;
+}
+
+.center {
+	text-align: center;
+}
+
+.content:hover {
+	// box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+	// box-shadow: inset 0 10px 25px 0 rgba(0, 0, 0, .5);
+	box-shadow:
+	0 10px 25px 0 rgba(0, 0, 0, .5),
+    0 20px 0 -10px rgb(214, 175, 101),
+    0 40px 0 -20px rgb(243, 177, 91),
+	// line-height: 10.0em;
+}
+
+
+.tablecontents {
+	font-family: "Hannotate SC";
+	font-size: 2em;
+	line-height: 1.0em;
+}
+
+
+.tabledata {
+	color: #111;
+	text-shadow: 0 0 10px orange,0 0 15px #fff;
+	//background-color: #111;
+	padding: 5px;
+	font-size: 50px;
+	line-height: 1.0em;
+}
+
+.gaming{
+    font-size: 36px;
+    color: transparent;             /*文字を透明にする*/
+    background-clip: text;          /*背景を文字で切り抜く*/
+    background-image: linear-gradient(45deg,
+        red,
+        orange,
+        yellow,
+        green,
+        aqua,
+        blue,
+        purple);
+    background-size: 1200%; 
+	animation: 4s linear 0s infinite alternate slide;    /* slideアニメーションを4秒で往復の線形移動を無限回行う */
+	line-height: 1.0em;
+}
+
+@keyframes slide { 
+    from { background-position: 0% 0%; } 
+    to { background-position: 100% 0%; }    /* 右から左へ移動するアニメーション */
 }
